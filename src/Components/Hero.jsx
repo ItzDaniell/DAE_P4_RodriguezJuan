@@ -1,4 +1,5 @@
-const Hero = ({ title, description }) => {
+
+const Hero = ({ title, description, children }) => {
   return (
     <div className="px-4 py-5 my-5 text-center">
       <h1 className="display-5 fw-bold">{title}</h1>
@@ -7,12 +8,7 @@ const Hero = ({ title, description }) => {
             {description}
         </p>
         <div className="d-grid gap-2 d-sm-flex justify-content-sm-center">
-          <button type="button" className="btn btn-primary btn-lg px-4 gap-3">
-            Primary button
-          </button>
-          <button type="button" className="btn btn-outline-secondary btn-lg px-4">
-            Secondary
-          </button>
+            {children}
         </div>
       </div>
     </div>

@@ -6,9 +6,9 @@ const CardList = ({ data }) => {
           {data.map((item) => {
             const { id, title, body } = item;
             return (
-              <div className="col-md-4">
+              <div className="col-md-4" key={id}>
                 <div className="card mb-4 box-shadow">
-                  <div className="card-body" key={id}>
+                  <div className="card-body">
                     <h2 className="card-title">{title}</h2>
                     <p className="card-text">{body.split(0, 150)}...</p>
                     <div className="d-flex justify-content-between align-items-center">
@@ -17,16 +17,15 @@ const CardList = ({ data }) => {
                           type="button"
                           className="btn btn-sm btn-outline-secondary"
                         >
-                          View
+                          Comentar
                         </button>
                         <button
                           type="button"
                           className="btn btn-sm btn-outline-secondary"
                         >
-                          Edit
+                          Dar Link
                         </button>
                       </div>
-                      <small className="text-muted">9 mins</small>
                     </div>
                   </div>
                 </div>
