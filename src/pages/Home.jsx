@@ -7,7 +7,10 @@ const Home = () => {
         <>
         <Header />
         <section>
-            <Hero />
+            <Hero title="Página principal" description="En esta página encontrarás posts usando fetching de datos con Axios y Zustand" />
+        </section>
+        <section>
+            
         </section>
         <Footer />
         </>
